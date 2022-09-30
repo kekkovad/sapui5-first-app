@@ -10,35 +10,57 @@
             <Title text="{i18n>title}" />
         </semantic:titleHeading>
         <semantic:content>
-        <l:HorizontalLayout class="sapUiContentPadding">
-            <l:VerticalLayout class="sapUiContentPadding">
-                <f:SimpleForm>
-                    <f:content>
-                        <Label text="Name" />
-                        <Input id="nameInput"/>
-                        <Label text="Street/No." />
-                        <Input id="streetInput"/>
-                        <Label text="City" />
-                        <Input id="cityInput"/>
-                        <Label text="Country" />
-                        <Input id="countryInput"/>
-                        <Label text="Place of birth" />
-                        <Input id="birthPlaceInput"/>
-                        <Label text="Date of birth" />
-                        <DatePicker id="birthDatePicker" />
-                        <Label text="E-mail" />
-                        <Input id="emailInput"/>
-                        <Label text="Telephone" />
-                        <Input id="telephoneInput"/>
-                    </f:content>
-                </f:SimpleForm>
-                
-            </l:VerticalLayout>
-            <l:VerticalLayout class="sapUiContentPadding">
-            <Button id="Button1" text="Press me" type="Emphasized" press="onPress"/>
-                <Button id="Button2" text="Press me" type="Emphasized" press="onPress"/>
-                <Button id="Button3" text="Press me" type="Accept" press="onPressButton3"/>
-            </l:VerticalLayout>
+            <l:HorizontalLayout class="sapUiContentPadding">
+                <l:VerticalLayout class="sapUiContentPadding">
+                    <f:SimpleForm>
+                        <f:content>
+                            <Label text="Name" />
+                            <Input id="nameInput"/>
+                            <Label text="Street/No." />
+                            <Input id="streetInput"/>
+                            <Label text="City" />
+                            <Input id="cityInput"/>
+                            <Label text="Country" />
+                            <Input id="countryInput"/>
+                            <Label text="Place of birth" />
+                            <Input id="birthPlaceInput"/>
+                            <Label text="Date of birth" />
+                            <DatePicker id="birthDatePicker" />
+                            <Label text="E-mail" />
+                            <Input id="emailInput"/>
+                            <Label text="Telephone" />
+                            <Input id="telephoneInput"/>
+                        </f:content>
+                    </f:SimpleForm>
+                </l:VerticalLayout>
+                <l:VerticalLayout class="sapUiContentPadding">
+                    <f:SimpleForm>
+                        <f:content>
+                            <Label text="Name" />
+                            <Text id="nameText"/>
+                            <Label text="Street/No." />
+                            <Text id="streetText"/>
+                            <Label text="City" />
+                            <Text id="cityText"/>
+                            <Label text="Country" />
+                            <Text id="countryText"/>
+                            <Label text="Place of birth" />
+                            <Text id="birthPlaceText"/>
+                            <Label text="Date of birth" />
+                            <Text id="birthDateText" />
+                            <Label text="E-mail" />
+                            <Text id="emailText"/>
+                            <Label text="Telephone" />
+                            <Text id="telephoneText"/>
+                        </f:content>
+                    </f:SimpleForm>
+                </l:VerticalLayout>
+                <l:VerticalLayout class="sapUiContentPadding">
+                    <Button id="Button1" text="Press me" type="Emphasized" press="onPress"/>
+                    <Button id="Button2" text="Press me" type="Emphasized" press="onPress"/>
+                    <Button id="Button3" text="Press me" type="Accept" press="onPressButton3"/>
+                    <Button id="SetNameButton" text="Set Name" type="Default" press="onPressSetNameButton"/>
+                </l:VerticalLayout>
             </l:HorizontalLayout >
         </semantic:content>
     </semantic:SemanticPage>

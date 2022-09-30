@@ -20,6 +20,13 @@ sap.ui.define(
         const sName = oNameInput.getValue();
         MessageToast.show("Hello " + sName);
       },
+      onPressSetNameButton: function () {
+        const oNameInput = this.getView().byId("nameInput");
+        const sName = oNameInput.getValue();
+        const oNameText= this.getView().byId("nameText");
+        oNameText.setText(sName);
+
+      },
     });
   }
 );
