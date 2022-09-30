@@ -10,6 +10,7 @@
             <Title text="{i18n>title}" />
         </semantic:titleHeading>
         <semantic:content>
+        <l:HorizontalLayout class="sapUiContentPadding">
             <l:VerticalLayout class="sapUiContentPadding">
                 <f:SimpleForm>
                     <f:content>
@@ -31,9 +32,14 @@
                         <Input id="telephoneInput"/>
                     </f:content>
                 </f:SimpleForm>
-                <Button id="Button1" text="Press me" type="Emphasized" press="onPress"/>
-                <Button id="Button2" text="Press me" type="Emphasized" press="onPress"/>
+                
             </l:VerticalLayout>
+            <l:VerticalLayout class="sapUiContentPadding">
+            <Button id="Button1" text="Press me" type="Emphasized" press="onPress"/>
+                <Button id="Button2" text="Press me" type="Emphasized" press="onPress"/>
+                <Button id="Button3" text="Press me" type="Accept" press="onPressButton3"/>
+            </l:VerticalLayout>
+            </l:HorizontalLayout >
         </semantic:content>
     </semantic:SemanticPage>
 </mvc:View>

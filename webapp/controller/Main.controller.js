@@ -15,6 +15,11 @@ sap.ui.define(
           MessageToast.show("Button 1 pressed");
         } else MessageBox.alert("Button 2 pressed");
       },
+      onPressButton3: function () {
+        const oNameInput = this.getView().byId("nameInput");
+        const sName = oNameInput.getValue();
+        MessageToast.show("Hello " + sName);
+      },
     });
   }
 );
