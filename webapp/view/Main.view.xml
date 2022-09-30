@@ -2,18 +2,38 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
     xmlns:semantic="sap.f.semantic"
-    xmlns:l="sap.ui.layout">
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
     <semantic:SemanticPage id="mySemanticPage" headerPinnable="true" toggleHeaderOnTitleClick="true" preserveHeaderStateOnScroll="false" titleAreaShrinkRatio="1:1.6:1.6" showFooter="false">
         <semantic:titleHeading>
             <Title text="{i18n>title}" />
         </semantic:titleHeading>
         <semantic:content>
             <l:VerticalLayout class="sapUiContentPadding">
+                <f:SimpleForm>
+                    <f:content>
+                        <Label text="Name" />
+                        <Input id="nameInput"/>
+                        <Label text="Street/No." />
+                        <Input id="streetInput"/>
+                        <Label text="City" />
+                        <Input id="cityInput"/>
+                        <Label text="Country" />
+                        <Input id="countryInput"/>
+                        <Label text="Place of birth" />
+                        <Input id="birthPlaceInput"/>
+                        <Label text="Date of birth" />
+                        <DatePicker id="birthDatePicker" />
+                        <Label text="E-mail" />
+                        <Input id="emailInput"/>
+                        <Label text="Telephone" />
+                        <Input id="telephoneInput"/>
+                    </f:content>
+                </f:SimpleForm>
                 <Button id="Button1" text="Press me" type="Emphasized" press="onPress"/>
                 <Button id="Button2" text="Press me" type="Emphasized" press="onPress"/>
             </l:VerticalLayout>
         </semantic:content>
-
-
     </semantic:SemanticPage>
 </mvc:View>
