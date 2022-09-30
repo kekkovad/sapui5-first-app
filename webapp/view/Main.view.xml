@@ -49,9 +49,9 @@
                             <Label text="{i18n>dateOfBirthLabel}" />
                             <Text id="birthDateText" text="{/dateOfBirth}" />
                             <Label text="{i18n>emailLabel}" />
-                            <Text id="emailText" text="{/email}" />
+                            <Link id="emailText" text="{/email}" press="onPressEmail" />
                             <Label text="{i18n>telephoneLabel}" />
-                            <Text id="telephoneText" text="{/telephone}"/>
+                            <Link id="telephoneText" text="{/telephone}" press="onPressTelephone"/>
                         </f:content>
                     </f:SimpleForm>
                 </l:VerticalLayout>
