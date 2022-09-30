@@ -70,9 +70,8 @@
         }
       },
       "": {
-        "dataSource": "mainService",
-        "preload": true,
-        "settings": {}
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/localData.json"
       }
     },
     "resources": {
@@ -96,9 +95,7 @@
         {
           "name": "RouteMain",
           "pattern": ":?query:",
-          "target": [
-            "TargetMain"
-          ]
+          "target": ["TargetMain"]
         }
       ],
       "targets": {

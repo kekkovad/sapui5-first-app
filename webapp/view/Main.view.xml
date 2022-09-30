@@ -14,21 +14,21 @@
                 <l:VerticalLayout class="sapUiContentPadding">
                     <f:SimpleForm>
                         <f:content>
-                            <Label text="Name" />
+                            <Label text="{i18n>nameLabel}" />
                             <Input id="nameInput"/>
-                            <Label text="Street/No." />
+                            <Label text="{i18n>streetLabel}" />
                             <Input id="streetInput"/>
-                            <Label text="City" />
+                            <Label text="{i18n>cityLabel}" />
                             <Input id="cityInput"/>
-                            <Label text="Country" />
+                            <Label text="{i18n>countryLabel}" />
                             <Input id="countryInput"/>
-                            <Label text="Place of birth" />
+                            <Label text="{i18n>placeOfBirthLabel}" />
                             <Input id="birthPlaceInput"/>
-                            <Label text="Date of birth" />
+                            <Label text="{i18n>dateOfBirthLabel}" />
                             <DatePicker id="birthDatePicker" />
-                            <Label text="E-mail" />
+                            <Label text="{i18n>emailLabel}" />
                             <Input id="emailInput"/>
-                            <Label text="Telephone" />
+                            <Label text="{i18n>telephoneLabel}" />
                             <Input id="telephoneInput"/>
                         </f:content>
                     </f:SimpleForm>
@@ -36,30 +36,30 @@
                 <l:VerticalLayout class="sapUiContentPadding">
                     <f:SimpleForm>
                         <f:content>
-                            <Label text="Name" />
-                            <Text id="nameText"/>
-                            <Label text="Street/No." />
-                            <Text id="streetText"/>
-                            <Label text="City" />
-                            <Text id="cityText"/>
-                            <Label text="Country" />
-                            <Text id="countryText"/>
-                            <Label text="Place of birth" />
-                            <Text id="birthPlaceText"/>
-                            <Label text="Date of birth" />
-                            <Text id="birthDateText" />
-                            <Label text="E-mail" />
-                            <Text id="emailText"/>
-                            <Label text="Telephone" />
-                            <Text id="telephoneText"/>
+                            <Label text="{i18n>nameLabel}" />
+                            <Text id="nameText" text="{/name}"/>
+                            <Label text="{i18n>streetLabel}" />
+                            <Text id="streetText" text="{/street}"/>
+                            <Label text="{i18n>cityLabel}" />
+                            <Text id="cityText" text="{/city}"/>
+                            <Label text="{i18n>countryLabel}" />
+                            <Text id="countryText" text="{/country}"/>
+                            <Label text="{i18n>placeOfBirthLabel}" />
+                            <Text id="birthPlaceText" text="{/placeOfBirth}"/>
+                            <Label text="{i18n>dateOfBirthLabel}" />
+                            <Text id="birthDateText" text="{/dateOfBirth}" />
+                            <Label text="{i18n>emailLabel}" />
+                            <Text id="emailText" text="{/email}" />
+                            <Label text="{i18n>telephoneLabel}" />
+                            <Text id="telephoneText" text="{/telephone}"/>
                         </f:content>
                     </f:SimpleForm>
                 </l:VerticalLayout>
                 <l:VerticalLayout class="sapUiContentPadding">
-                    <Button id="Button1" text="Press me" type="Emphasized" press="onPress"/>
-                    <Button id="Button2" text="Press me" type="Emphasized" press="onPress"/>
-                    <Button id="Button3" text="Press me" type="Accept" press="onPressButton3"/>
-                    <Button id="SetNameButton" text="Set Name" type="Default" press="onPressSetNameButton"/>
+                    <Button id="Button1" text="{i18n>pressMeLabel}" type="Emphasized" press="onPress"/>
+                    <Button id="Button2" text="{i18n>pressMeLabel}" type="Emphasized" press="onPress"/>
+                    <Button id="Button3" text="{i18n>pressMeLabel}" type="Accept" press="onPressButton3"/>
+                    <Button id="SetNameButton" text="{i18n>setMeLabel}" type="Default" press="onPressSetNameButton"/>
                 </l:VerticalLayout>
             </l:HorizontalLayout >
         </semantic:content>
