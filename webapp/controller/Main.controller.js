@@ -10,6 +10,9 @@ sap.ui.define([
         return Controller.extend("btp.academy.firstfioriapp.controller.Main", {
             onInit: function () {
 
+            },
+            onPress : function() {
+                console.log("Button pressed")
             }
         });
     });

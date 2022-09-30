@@ -1,7 +1,15 @@
 <mvc:View controllerName="btp.academy.firstfioriapp.controller.Main"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+    xmlns="sap.m"
+    xmlns:semantic="sap.f.semantic">
+    <semantic:SemanticPage id="mySemanticPage" headerPinnable="true" toggleHeaderOnTitleClick="true" preserveHeaderStateOnScroll="false" titleAreaShrinkRatio="1:1.6:1.6" showFooter="false">
+        <semantic:titleHeading>
+            <Title text="{i18n>title}" />
+        </semantic:titleHeading>
+        <semantic:content>
+            <Button text="Press me" type="Emphasized" press="onPress"/>
+        </semantic:content>
+
+
+    </semantic:SemanticPage>
 </mvc:View>
