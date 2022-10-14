@@ -10,7 +10,7 @@ sap.ui.define(
    */
   function (Controller, MessageToast, MessageBox, library) {
     "use strict";
-
+   
     const URLHelper = library.URLHelper;
 
     return Controller.extend("btp.academy.firstfioriapp.controller.Main", {
